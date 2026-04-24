@@ -101,6 +101,7 @@ La documentación está disponible en:
 
 ## 🛠️ Instalación y ejecución
 
+```
 -- bash
 # instalar dependencias
 npm install
@@ -113,6 +114,7 @@ npm run build
 
 # ejecutar tests
 npm run test
+```
 
 
 ## Variables de entorno
