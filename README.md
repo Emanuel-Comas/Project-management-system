@@ -15,6 +15,7 @@ El objetivo del sistema es permitir la gestión simple de **proyectos, clientes 
 - bcrypt (encriptación de contraseñas)
 - Swagger (documentación API)
 - class-validator / class-transformer
+- Compodoc (documentación automática del código)
 
 ---
 
@@ -89,11 +90,29 @@ Cada tarea tiene:
 
 ---
 
-## 📚 Documentación API (Swagger)
 
-La documentación está disponible en:
+## 📚 Documentación
 
+### 📌 API (Swagger)
+
+La documentación de la API está disponible en:
+```
     http://localhost:3000/api
+```
+
+### 📌 Código (Compodoc)
+
+La documentación del código del proyecto se genera con Compodoc:
+
+```bash
+npx @compodoc/compodoc -p tsconfig.json -s
+```
+
+Luego se puede acceder en:
+
+```
+http://localhost:8080
+```
 
 
 
