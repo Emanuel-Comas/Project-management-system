@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
 import { CreateTareaDto } from "../dtos/input/create-tarea.dto";
 import { InjectRepository } from "@nestjs/typeorm";
-import { Tarea } from "../entitites/tarea.entity";
+import { Tarea } from "../entities/tarea.entity";
 import { Repository } from "typeorm";
 import { EstadosTareasEnum } from "../enums/estados-tareas.enum";
 import { UpdateTareaDto } from "../dtos/input/update-tarea.dto";
@@ -50,6 +50,20 @@ export class TareasService {
 
         await this.tareasRepository.save(tarea);
 
+    }
+
+    async obtenerTareasPorProyecto(idProyecto: number) {
+
+        const tareas = await this.tareasRepository.find({
+            where: { idProyecto },
+            order: { id: 'ASC' }
+        });
+
+        return tareas.map(tarea => ({
+            id: tarea.id,
+            descripcion: tarea.descripcion,
+            estado: tarea.estado
+        }));
     }
 
 }

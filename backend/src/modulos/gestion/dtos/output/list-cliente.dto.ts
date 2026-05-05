@@ -12,4 +12,14 @@ export class ListClienteDTO {
     @ApiProperty()
     estado!: EstadosClientesEnum;
 
+    @ApiProperty()
+    telefono?: string;
+
+    @ApiProperty()
+    email?: string;
+
+    // Extra4
+    @ApiProperty({ example: "2026-04-30T13:51:52.728Z" })
+    createdAt?: Date;
+
 }

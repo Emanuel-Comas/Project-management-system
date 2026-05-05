@@ -33,7 +33,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Optional: debug files
+# Opcional: debug files
 
 npm-debug.log*
 yarn-debug.log*
