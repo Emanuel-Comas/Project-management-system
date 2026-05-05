@@ -203,6 +203,31 @@ Crear un archivo .env en la raíz del backend:
         └── main.ts
 ```
 
+```
+└── 📁frontend
+    └── 📁src
+        └── 📁app
+            ├── app.config.ts
+            ├── app.css
+            ├── app.html
+            ├── app.routes.ts
+            ├── app.spec.ts
+            ├── app.ts
+        ├── index.html
+        ├── main.ts
+        ├── styles.css
+    ├── .editorconfig
+    ├── .gitignore
+    ├── .prettierrc
+    ├── angular.json
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    └── tsconfig.spec.json
+```
+
 
 ## Notas importantes
 
